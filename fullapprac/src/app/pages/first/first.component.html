@@ -1,0 +1,24 @@
+
+
+<div class="container">
+    <div *ngFor="let car of cars" [ngClass]="{
+      'alert alert-primary':car.name === 'MG Hector',
+      'alert alert-secondary':car.name === 'Ford',
+      'alert alert-success':car.name === 'Kia',
+      'alert alert-danger':car.name === 'BMW',
+      'alert alert-warning':car.name === 'Jaguar',
+      'alert alert-info':car.name === 'Suzuki'
+    }"    role='alert' >
+    {{car.name}}  {{ car.color }}
+    </div>
+  </div>
+  <p [ngClass]="{'blue':true==true}">
+    Angular Directives Are Cool!
+</p>
+
+In this example, we use the ngIf directive to add or remove the text using a button.
+<div *ngIf="true">Text to show</div>
+<h1 my-error>Hello </h1>
+
+<h2 *myCustomIf="condition">Hello {{condition}}  </h2>
+<button (click)="condition = !condition">Click</button>
