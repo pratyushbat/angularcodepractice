@@ -11,6 +11,8 @@ import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { VrcComponentComponent } from './pages/vrc-component/vrc-component.component';
+import { HelloComponent } from './pages/hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SidebarComponent } from './pages/sidebar/sidebar.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    VrcComponentComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,

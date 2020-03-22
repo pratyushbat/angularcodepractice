@@ -10,15 +10,18 @@
           <a routerLink="/second" style="color: white" class="nav-link" href="#">Second</a>
         </li>
         <li class="nav-item">
+            <a routerLink="/vrc" style="color: white" class="nav-link" href="#">ViewRc</a>
+          </li>
+          <li class="nav-item">
             <a routerLink="/dashboard" style="color: white" class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a routerLink="/fo" style="color: white" class="nav-link" href="#">foutlet</a>
           </li>
  
-          <a [routerLink]="[{ outlets: { primary: ['path'],sidebar: ['path'] } }]">
+          <!-- <a [routerLink]="[{ outlets: { primary: ['path'],sidebar: ['path'] } }]">
             Products List
-        </a>
+        </a> -->
         </ul>
   </nav>
   
