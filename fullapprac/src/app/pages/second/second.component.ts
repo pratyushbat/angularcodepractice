@@ -9,7 +9,8 @@ export class SecondComponent implements OnInit {
   myName: String = "Aman";
   name='Avenger'
   @ViewChild(HelloComponent, {static: false}) hello: HelloComponent;
-
+  @ViewChild('mysecinp',{static: false}) input2; 
+  
 
   @ViewChild('uthapko', {static: false}) pRef: ElementRef;
  
@@ -32,6 +33,7 @@ export class SecondComponent implements OnInit {
     // console.log(this.pRef.nativeElement.innerHTML); 
     // uthapko changed below
     // this.pRef.nativeElement.innerHTML = "DOM updated succesfully!!!"; 
+    console.log(this.input2);
   }
 
 

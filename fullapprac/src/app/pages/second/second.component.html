@@ -7,6 +7,61 @@
 
 
 <hello name="{{ name }}" ></hello>
+<input #mysecinp >
+  
+<p>
+    @ViewChild() supports directive or component type as parameter, or the name (string) of a template variable.
+@ViewChildren() also supports a list of names as comma separated list (currently no spaces allowed @ViewChildren('var1,var2,var3')).
+@ContentChild() and @ContentChildren() do the same but in the light DOM 
+<!-- (<ng-content> projected elements). -->
+
+    
+</p>
+
+<p>@ContentChildren() is the only one that allows to also query for descendants
+
+    <!-- @ContentChildren(SomeTypeOrVarName, {descendants: true}) someField;  -->
+   </p>
+<h4>read</h4>
 
 
+<p>If there are a component and directives the read parameter allows to specify which instance should be returned.
+    
+    For example ViewContainerRef that is required by dynamically created components instead of the default ElementRef
+<!-- @ViewChild('myname', { read: ViewContainerRef }) target; -->
+
+
+</p>
+<h4>https://stackoverflow.com/questions/32693061/how-can-i-select-an-element-in-a-component-template/35209681#35209681</h4>
+
+<h3>ngOnint and ngAfterContentInit and  ngAfterViewInit</h3>
+<p>Even though view children are only set when ngAfterViewInit() is called and content children are only set when ngAfterContentInit() is called, if you want to subscribe to changes of the query result, it should be done in ngOnInit()</p>
+<p>
+    
+    <!-- @ViewChildren(SomeType) viewChildren;
+    @ContentChildren(SomeType) contentChildren;
+    
+    ngOnInit() {
+      this.viewChildren.changes.subscribe(changes => console.log(changes));
+      this.contentChildren.changes.subscribe(changes => console.log(changes));
+    } -->
+
+    DOM acccess
+    <!-- export class MyComponent {
+        constructor(private elRef:ElementRef) {}
+        ngAfterViewInit() {
+          var div = this.elRef.nativeElement.querySelector('div');
+          console.log(div);
+        }
+      
+        // for transcluded content
+        ngAfterContentInit() {
+          var div = this.elRef.nativeElement.querySelector('div');
+          console.log(div);
+        }
+      } -->
+</p>
+
+<h2>left links</h2>
+<p>https://www.concretepage.com/angular-2/angular-4-ng-template-example#TemplateRef</p>     
 <vcr></vcr>

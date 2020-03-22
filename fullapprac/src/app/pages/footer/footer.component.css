@@ -1,11 +1,12 @@
 
 footer {
-    position: absolute;
+    position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     padding: 1rem;
     text-align: center;
-    height: 120px;
+    height: 10%;
+    width:100%;
     background-color: blueviolet;
 }

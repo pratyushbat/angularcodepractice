@@ -1,27 +1,29 @@
-
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-light">
-    
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a routerLink="/first" style="color: white" class="nav-link" href="#">First</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/second" style="color: white" class="nav-link" href="#">Second</a>
-        </li>
-        <li class="nav-item">
-            <a routerLink="/vrc" style="color: white" class="nav-link" href="#">ViewRc</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/dashboard" style="color: white" class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/fo" style="color: white" class="nav-link" href="#">foutlet</a>
-          </li>
- 
-          <!-- <a [routerLink]="[{ outlets: { primary: ['path'],sidebar: ['path'] } }]">
-            Products List
-        </a> -->
+<!-- <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse" title="This Header is rendered by /app/_layout/site-header/site-header.component.html"> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" style="color: whitesmoke;" href="#">Multi Layout Angular App</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a routerLink="/first" style="color: white" class="nav-link" href="#">First</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/second" style="color: white" class="nav-link" href="#">Second</a>
+              </li>
+              <li class="nav-item">
+                  <a routerLink="/vrc" style="color: white" class="nav-link" href="#">ViewRc</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/dashboard" style="color: white" class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a routerLink="/fo" style="color: white" class="nav-link" href="#">foutlet</a>
+                </li>
+        
+        
         </ul>
-  </nav>
-  
+      </div>
+    </nav>
