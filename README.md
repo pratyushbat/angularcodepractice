@@ -65,3 +65,5 @@ https://angular.io/guide/transition-and-triggers
 
 
 
+https://www.freakyjolly.com/angular-nested-routing-with-multiple-routeroutlet-using-loadchildren-having-own-router-modules-example-application/
+https://stackblitz.com/edit/angular2-reactive-form-table
